@@ -16,3 +16,7 @@ if __name__ == '__main__':
             if removeDuplicate:
                 os.remove(downloadsFolder + filename)
             print(name + ": " + extension)
+
+        if extension in [".mp3"]:
+            musicFolder = "C:/Users/ehdel/Music/"
+            os.rename(downloadsFolder + filename, musicFolder + filename)
